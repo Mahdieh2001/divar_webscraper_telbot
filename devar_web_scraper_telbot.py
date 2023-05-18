@@ -2,11 +2,11 @@ from bs4 import BeautifulSoup
 import requests
 import time
 
-city = 'azarbaijan-east-province'
+province = 'azarbaijan-east-province'
 rent_or_buy = 'rent'
 building_type = 'villa'
 
-html_text = requests.get(f'https://divar.ir/s/{city}/{rent_or_buy}-{building_type}').text
+html_text = requests.get(f'https://divar.ir/s/{province}/{rent_or_buy}-{building_type}').text
 soup = BeautifulSoup(html_text, 'lxml')
 ad_list = []
 
