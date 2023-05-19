@@ -417,16 +417,6 @@ def web_scraper(province, rent_or_buy, building_type):
     return response 
 
 
-def print_responce ():
-        web_scraper_response = web_scraper(province, rent_or_buy, building_type)
-        for item in web_scraper_response :
-            if rent_or_buy == 'rent':
-                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
-            if rent_or_buy == 'buy':
-                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
-
-            bot.send_message(call.message.chat.id, print_lst )
-
 # Define message handler function
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
