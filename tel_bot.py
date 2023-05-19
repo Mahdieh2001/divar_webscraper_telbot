@@ -78,79 +78,325 @@ def handle_callback_query(call):
 
     elif call.data == 'tehran-province':
         province = 'tehran-province'
-        #web_scraper_response = web_scraper(province, rent_or_buy, building_type)
-        #bot.send_message(call.message.chat.id, web_scraper_response)
+        web_scraper_response = web_scraper(province, rent_or_buy, building_type)
+        for item in web_scraper_response :
+            if rent_or_buy == 'rent':
+                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+            if rent_or_buy == 'buy':
+                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+
+            bot.send_message(call.message.chat.id, print_lst )
 
     elif call.data == 'alborz-province':
         province = 'alborz-province'
+        web_scraper_response = web_scraper(province, rent_or_buy, building_type)
+        for item in web_scraper_response :
+            if rent_or_buy == 'rent':
+                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+            if rent_or_buy == 'buy':
+                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+
+            bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'isfahan-province':
         province = 'isfahan-province'
+        web_scraper_response = web_scraper(province, rent_or_buy, building_type)
+        for item in web_scraper_response :
+            if rent_or_buy == 'rent':
+                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+            if rent_or_buy == 'buy':
+                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+
+            bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'fars-province':
         province = 'fars-province'
+        web_scraper_response = web_scraper(province, rent_or_buy, building_type)
+        for item in web_scraper_response :
+            if rent_or_buy == 'rent':
+                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+            if rent_or_buy == 'buy':
+                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+
+            bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'khorasan-razavi-province':
         province = 'khorasan-razavi-province'
+        web_scraper_response = web_scraper(province, rent_or_buy, building_type)
+        for item in web_scraper_response :
+            if rent_or_buy == 'rent':
+                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+            if rent_or_buy == 'buy':
+                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+
+            bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'azarbaijan-east-province':
         province = 'azarbaijan-east-province'
+        web_scraper_response = web_scraper(province, rent_or_buy, building_type)
+        for item in web_scraper_response :
+            if rent_or_buy == 'rent':
+                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+            if rent_or_buy == 'buy':
+                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+
+            bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'azerbaijan-west-province':
         province = 'azerbaijan-west-province'
+        web_scraper_response = web_scraper(province, rent_or_buy, building_type)
+        for item in web_scraper_response :
+            if rent_or_buy == 'rent':
+                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+            if rent_or_buy == 'buy':
+                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+
+            bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'ardabil-province':
         province = 'ardabil-province'
+        web_scraper_response = web_scraper(province, rent_or_buy, building_type)
+        for item in web_scraper_response :
+            if rent_or_buy == 'rent':
+                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+            if rent_or_buy == 'buy':
+                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+
+            bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'ilam-province':
         province = 'ilam-province'
+        web_scraper_response = web_scraper(province, rent_or_buy, building_type)
+        for item in web_scraper_response :
+            if rent_or_buy == 'rent':
+                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+            if rent_or_buy == 'buy':
+                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+
+            bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'bushehr-province':
         province = 'bushehr-province'
+        web_scraper_response = web_scraper(province, rent_or_buy, building_type)
+        for item in web_scraper_response :
+            if rent_or_buy == 'rent':
+                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+            if rent_or_buy == 'buy':
+                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+
+            bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'chahar-mahaal-and-bakhtiari-province':
         province = 'chahar-mahaal-and-bakhtiari-province'
+        web_scraper_response = web_scraper(province, rent_or_buy, building_type)
+        for item in web_scraper_response :
+            if rent_or_buy == 'rent':
+                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+            if rent_or_buy == 'buy':
+                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+
+            bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'khorasan-south-province':
         province = 'khorasan-south-province'
+        web_scraper_response = web_scraper(province, rent_or_buy, building_type)
+        for item in web_scraper_response :
+            if rent_or_buy == 'rent':
+                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+            if rent_or_buy == 'buy':
+                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+
+            bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'khorasan-north-province':
         province = 'khorasan-north-province'
+        web_scraper_response = web_scraper(province, rent_or_buy, building_type)
+        for item in web_scraper_response :
+            if rent_or_buy == 'rent':
+                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+            if rent_or_buy == 'buy':
+                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+
+            bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'khuzestan-province':
         province = 'khuzestan-province'
+        web_scraper_response = web_scraper(province, rent_or_buy, building_type)
+        for item in web_scraper_response :
+            if rent_or_buy == 'rent':
+                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+            if rent_or_buy == 'buy':
+                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+
+            bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'zanjan-province':
         province = 'zanjan-province'
+        web_scraper_response = web_scraper(province, rent_or_buy, building_type)
+        for item in web_scraper_response :
+            if rent_or_buy == 'rent':
+                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+            if rent_or_buy == 'buy':
+                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+
+            bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'semnan-province':
         province = 'semnan-province'
+        web_scraper_response = web_scraper(province, rent_or_buy, building_type)
+        for item in web_scraper_response :
+            if rent_or_buy == 'rent':
+                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+            if rent_or_buy == 'buy':
+                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+
+            bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'yazd-province':
         province = 'yazd-province'
+        web_scraper_response = web_scraper(province, rent_or_buy, building_type)
+        for item in web_scraper_response :
+            if rent_or_buy == 'rent':
+                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+            if rent_or_buy == 'buy':
+                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+
+            bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'qazvin-province':
         province = 'qazvin-province'
+        web_scraper_response = web_scraper(province, rent_or_buy, building_type)
+        for item in web_scraper_response :
+            if rent_or_buy == 'rent':
+                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+            if rent_or_buy == 'buy':
+                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+
+            bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'qom':
         province = 'qom'
+        web_scraper_response = web_scraper(province, rent_or_buy, building_type)
+        for item in web_scraper_response :
+            if rent_or_buy == 'rent':
+                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+            if rent_or_buy == 'buy':
+                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+
+            bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'kurdistan-province':
         province = 'kurdistan-province'
+        web_scraper_response = web_scraper(province, rent_or_buy, building_type)
+        for item in web_scraper_response :
+            if rent_or_buy == 'rent':
+                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+            if rent_or_buy == 'buy':
+                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+
+            bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'kerman-province':
         province = 'kerman-province'
+        web_scraper_response = web_scraper(province, rent_or_buy, building_type)
+        for item in web_scraper_response :
+            if rent_or_buy == 'rent':
+                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+            if rent_or_buy == 'buy':
+                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+
+            bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'kermanshah-province':
         province = 'kermanshah-province'
+        web_scraper_response = web_scraper(province, rent_or_buy, building_type)
+        for item in web_scraper_response :
+            if rent_or_buy == 'rent':
+                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+            if rent_or_buy == 'buy':
+                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+
+            bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'kohgiluyeh-and-boyer-ahmad-province':
         province = 'kohgiluyeh-and-boyer-ahmad-province'
+        web_scraper_response = web_scraper(province, rent_or_buy, building_type)
+        for item in web_scraper_response :
+            if rent_or_buy == 'rent':
+                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+            if rent_or_buy == 'buy':
+                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+
+            bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'golestan-province':
         province = 'golestan-province'
+        web_scraper_response = web_scraper(province, rent_or_buy, building_type)
+        for item in web_scraper_response :
+            if rent_or_buy == 'rent':
+                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+            if rent_or_buy == 'buy':
+                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+
+            bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'gilan-province':
         province = 'gilan-province'
+        web_scraper_response = web_scraper(province, rent_or_buy, building_type)
+        for item in web_scraper_response :
+            if rent_or_buy == 'rent':
+                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+            if rent_or_buy == 'buy':
+                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+
+            bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'lorestan-province':
         province = 'lorestan-province'
+        web_scraper_response = web_scraper(province, rent_or_buy, building_type)
+        for item in web_scraper_response :
+            if rent_or_buy == 'rent':
+                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+            if rent_or_buy == 'buy':
+                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+
+            bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'mazandaran-province':
         province = 'mazandaran-province'
+        web_scraper_response = web_scraper(province, rent_or_buy, building_type)
+        for item in web_scraper_response :
+            if rent_or_buy == 'rent':
+                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+            if rent_or_buy == 'buy':
+                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+
+            bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'markazi-province':
         province = 'markazi-province'
+        web_scraper_response = web_scraper(province, rent_or_buy, building_type)
+        for item in web_scraper_response :
+            if rent_or_buy == 'rent':
+                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+            if rent_or_buy == 'buy':
+                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+
+            bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'hormozgan-province':
         province = 'hormozgan-province'
+        web_scraper_response = web_scraper(province, rent_or_buy, building_type)
+        for item in web_scraper_response :
+            if rent_or_buy == 'rent':
+                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+            if rent_or_buy == 'buy':
+                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+
+            bot.send_message(call.message.chat.id, print_lst ) 
     elif call.data == 'hamadan-province':
         province = 'hamadan-province'
+        web_scraper_response = web_scraper(province, rent_or_buy, building_type)
+        for item in web_scraper_response :
+            if rent_or_buy == 'rent':
+                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+            if rent_or_buy == 'buy':
+                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+
+            bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'sistan-and-baluchestan-province':
         province = 'sistan-and-baluchestan-province'
+        web_scraper_response = web_scraper(province, rent_or_buy, building_type)
+        for item in web_scraper_response :
+            if rent_or_buy == 'rent':
+                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+            if rent_or_buy == 'buy':
+                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+
+            bot.send_message(call.message.chat.id, print_lst )
     #elif province != None:
         #web_scraper_response = web_scraper(province, rent_or_buy, building_type)
         #bot.send_message(call.message.chat.id, 'jljkhjg')
 
 
 def web_scraper(province, rent_or_buy, building_type):
-    province = province
-    rent_or_buy = rent_or_buy
-    building_type = building_type
-    html_text = requests.get(f'https://divar.ir/s/{province}/{rent_or_buy}-{building_type}').text
+    province_0 = province
+    rent_or_buy_0 = rent_or_buy
+    building_type_0 = building_type
+    html_text = requests.get(f'https://divar.ir/s/{province_0}/{rent_or_buy_0}-{building_type_0}').text
     soup = BeautifulSoup(html_text, 'lxml')
     ad_list = []
 
@@ -160,25 +406,29 @@ def web_scraper(province, rent_or_buy, building_type):
             title = item.find('h2', class_='kt-post-card__title').text
             parent = item.find('div', class_='kt-post-card__description')
             deposit = parent.text.split()[-2]
+            if deposit == 'ودیعه:':
+                deposit = ""
             rent = parent.next_sibling.text.split()[-2]
+            if rent == 'اجاره:' or rent == 'رهن':
+                rent = ""
             link = 'https://divar.ir' + item.a['href']
 
-            ad = {
-                'title': title,
-                'deposit': deposit,
-                'rent': rent,
-                'link': link
-            }
+            ad = [title, deposit, rent, link]
             ad_list.append(ad)
         return ad_list
+    response = preprocess(soup)
+    return response 
 
 
-    if __name__ == '__main__':
-        while True:
-            response = preprocess(soup)
-    return response        
+def print_responce ():
+        web_scraper_response = web_scraper(province, rent_or_buy, building_type)
+        for item in web_scraper_response :
+            if rent_or_buy == 'rent':
+                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+            if rent_or_buy == 'buy':
+                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
 
-
+            bot.send_message(call.message.chat.id, print_lst )
 
 # Define message handler function
 @bot.message_handler(commands=['start'])
