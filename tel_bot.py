@@ -387,9 +387,6 @@ def handle_callback_query(call):
                 print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
 
             bot.send_message(call.message.chat.id, print_lst )
-    #elif province != None:
-        #web_scraper_response = web_scraper(province, rent_or_buy, building_type)
-        #bot.send_message(call.message.chat.id, 'jljkhjg')
 
 
 def web_scraper(province, rent_or_buy, building_type):
