@@ -81,9 +81,9 @@ def handle_callback_query(call):
         web_scraper_response = web_scraper(province, rent_or_buy, building_type)
         for item in web_scraper_response :
             if rent_or_buy == 'rent':
-                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "ودیعه: " + item[1] + '\n' + "اجاره: " + item[2] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
             if rent_or_buy == 'buy':
-                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "قیمت:" + item[1] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
 
             bot.send_message(call.message.chat.id, print_lst )
 
@@ -92,9 +92,9 @@ def handle_callback_query(call):
         web_scraper_response = web_scraper(province, rent_or_buy, building_type)
         for item in web_scraper_response :
             if rent_or_buy == 'rent':
-                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "ودیعه: " + item[1] + '\n' + "اجاره: " + item[2] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
             if rent_or_buy == 'buy':
-                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "قیمت:" + item[1] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
 
             bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'isfahan-province':
@@ -102,9 +102,9 @@ def handle_callback_query(call):
         web_scraper_response = web_scraper(province, rent_or_buy, building_type)
         for item in web_scraper_response :
             if rent_or_buy == 'rent':
-                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "ودیعه: " + item[1] + '\n' + "اجاره: " + item[2] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
             if rent_or_buy == 'buy':
-                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "قیمت:" + item[1] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
 
             bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'fars-province':
@@ -112,9 +112,9 @@ def handle_callback_query(call):
         web_scraper_response = web_scraper(province, rent_or_buy, building_type)
         for item in web_scraper_response :
             if rent_or_buy == 'rent':
-                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "ودیعه: " + item[1] + '\n' + "اجاره: " + item[2] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
             if rent_or_buy == 'buy':
-                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "قیمت:" + item[1] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
 
             bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'khorasan-razavi-province':
@@ -122,9 +122,9 @@ def handle_callback_query(call):
         web_scraper_response = web_scraper(province, rent_or_buy, building_type)
         for item in web_scraper_response :
             if rent_or_buy == 'rent':
-                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "ودیعه: " + item[1] + '\n' + "اجاره: " + item[2] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
             if rent_or_buy == 'buy':
-                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "قیمت:" + item[1] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
 
             bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'azarbaijan-east-province':
@@ -132,9 +132,9 @@ def handle_callback_query(call):
         web_scraper_response = web_scraper(province, rent_or_buy, building_type)
         for item in web_scraper_response :
             if rent_or_buy == 'rent':
-                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "ودیعه: " + item[1] + '\n' + "اجاره: " + item[2] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
             if rent_or_buy == 'buy':
-                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "قیمت:" + item[1] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
 
             bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'azerbaijan-west-province':
@@ -142,9 +142,9 @@ def handle_callback_query(call):
         web_scraper_response = web_scraper(province, rent_or_buy, building_type)
         for item in web_scraper_response :
             if rent_or_buy == 'rent':
-                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "ودیعه: " + item[1] + '\n' + "اجاره: " + item[2] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
             if rent_or_buy == 'buy':
-                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "قیمت:" + item[1] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
 
             bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'ardabil-province':
@@ -152,9 +152,9 @@ def handle_callback_query(call):
         web_scraper_response = web_scraper(province, rent_or_buy, building_type)
         for item in web_scraper_response :
             if rent_or_buy == 'rent':
-                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "ودیعه: " + item[1] + '\n' + "اجاره: " + item[2] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
             if rent_or_buy == 'buy':
-                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "قیمت:" + item[1] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
 
             bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'ilam-province':
@@ -162,9 +162,9 @@ def handle_callback_query(call):
         web_scraper_response = web_scraper(province, rent_or_buy, building_type)
         for item in web_scraper_response :
             if rent_or_buy == 'rent':
-                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "ودیعه: " + item[1] + '\n' + "اجاره: " + item[2] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
             if rent_or_buy == 'buy':
-                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "قیمت:" + item[1] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
 
             bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'bushehr-province':
@@ -172,29 +172,25 @@ def handle_callback_query(call):
         web_scraper_response = web_scraper(province, rent_or_buy, building_type)
         for item in web_scraper_response :
             if rent_or_buy == 'rent':
-                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "ودیعه: " + item[1] + '\n' + "اجاره: " + item[2] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
             if rent_or_buy == 'buy':
-                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "قیمت:" + item[1] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
 
             bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'chahar-mahaal-and-bakhtiari-province':
         province = 'chahar-mahaal-and-bakhtiari-province'
         web_scraper_response = web_scraper(province, rent_or_buy, building_type)
         for item in web_scraper_response :
-            if rent_or_buy == 'rent':
-                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
-            if rent_or_buy == 'buy':
-                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
-
+            
             bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'khorasan-south-province':
         province = 'khorasan-south-province'
         web_scraper_response = web_scraper(province, rent_or_buy, building_type)
         for item in web_scraper_response :
             if rent_or_buy == 'rent':
-                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "ودیعه: " + item[1] + '\n' + "اجاره: " + item[2] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
             if rent_or_buy == 'buy':
-                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "قیمت:" + item[1] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
 
             bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'khorasan-north-province':
@@ -202,9 +198,9 @@ def handle_callback_query(call):
         web_scraper_response = web_scraper(province, rent_or_buy, building_type)
         for item in web_scraper_response :
             if rent_or_buy == 'rent':
-                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "ودیعه: " + item[1] + '\n' + "اجاره: " + item[2] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
             if rent_or_buy == 'buy':
-                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "قیمت:" + item[1] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
 
             bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'khuzestan-province':
@@ -212,9 +208,9 @@ def handle_callback_query(call):
         web_scraper_response = web_scraper(province, rent_or_buy, building_type)
         for item in web_scraper_response :
             if rent_or_buy == 'rent':
-                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "ودیعه: " + item[1] + '\n' + "اجاره: " + item[2] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
             if rent_or_buy == 'buy':
-                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "قیمت:" + item[1] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
 
             bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'zanjan-province':
@@ -222,9 +218,9 @@ def handle_callback_query(call):
         web_scraper_response = web_scraper(province, rent_or_buy, building_type)
         for item in web_scraper_response :
             if rent_or_buy == 'rent':
-                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "ودیعه: " + item[1] + '\n' + "اجاره: " + item[2] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
             if rent_or_buy == 'buy':
-                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "قیمت:" + item[1] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
 
             bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'semnan-province':
@@ -232,9 +228,9 @@ def handle_callback_query(call):
         web_scraper_response = web_scraper(province, rent_or_buy, building_type)
         for item in web_scraper_response :
             if rent_or_buy == 'rent':
-                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "ودیعه: " + item[1] + '\n' + "اجاره: " + item[2] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
             if rent_or_buy == 'buy':
-                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "قیمت:" + item[1] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
 
             bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'yazd-province':
@@ -242,9 +238,9 @@ def handle_callback_query(call):
         web_scraper_response = web_scraper(province, rent_or_buy, building_type)
         for item in web_scraper_response :
             if rent_or_buy == 'rent':
-                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "ودیعه: " + item[1] + '\n' + "اجاره: " + item[2] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
             if rent_or_buy == 'buy':
-                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "قیمت:" + item[1] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
 
             bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'qazvin-province':
@@ -252,9 +248,9 @@ def handle_callback_query(call):
         web_scraper_response = web_scraper(province, rent_or_buy, building_type)
         for item in web_scraper_response :
             if rent_or_buy == 'rent':
-                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "ودیعه: " + item[1] + '\n' + "اجاره: " + item[2] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
             if rent_or_buy == 'buy':
-                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "قیمت:" + item[1] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
 
             bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'qom':
@@ -262,9 +258,9 @@ def handle_callback_query(call):
         web_scraper_response = web_scraper(province, rent_or_buy, building_type)
         for item in web_scraper_response :
             if rent_or_buy == 'rent':
-                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "ودیعه: " + item[1] + '\n' + "اجاره: " + item[2] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
             if rent_or_buy == 'buy':
-                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "قیمت:" + item[1] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
 
             bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'kurdistan-province':
@@ -272,9 +268,9 @@ def handle_callback_query(call):
         web_scraper_response = web_scraper(province, rent_or_buy, building_type)
         for item in web_scraper_response :
             if rent_or_buy == 'rent':
-                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "ودیعه: " + item[1] + '\n' + "اجاره: " + item[2] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
             if rent_or_buy == 'buy':
-                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "قیمت:" + item[1] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
 
             bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'kerman-province':
@@ -282,9 +278,9 @@ def handle_callback_query(call):
         web_scraper_response = web_scraper(province, rent_or_buy, building_type)
         for item in web_scraper_response :
             if rent_or_buy == 'rent':
-                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "ودیعه: " + item[1] + '\n' + "اجاره: " + item[2] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
             if rent_or_buy == 'buy':
-                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "قیمت:" + item[1] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
 
             bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'kermanshah-province':
@@ -292,9 +288,9 @@ def handle_callback_query(call):
         web_scraper_response = web_scraper(province, rent_or_buy, building_type)
         for item in web_scraper_response :
             if rent_or_buy == 'rent':
-                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "ودیعه: " + item[1] + '\n' + "اجاره: " + item[2] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
             if rent_or_buy == 'buy':
-                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "قیمت:" + item[1] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
 
             bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'kohgiluyeh-and-boyer-ahmad-province':
@@ -302,9 +298,9 @@ def handle_callback_query(call):
         web_scraper_response = web_scraper(province, rent_or_buy, building_type)
         for item in web_scraper_response :
             if rent_or_buy == 'rent':
-                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "ودیعه: " + item[1] + '\n' + "اجاره: " + item[2] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
             if rent_or_buy == 'buy':
-                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "قیمت:" + item[1] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
 
             bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'golestan-province':
@@ -312,9 +308,9 @@ def handle_callback_query(call):
         web_scraper_response = web_scraper(province, rent_or_buy, building_type)
         for item in web_scraper_response :
             if rent_or_buy == 'rent':
-                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "ودیعه: " + item[1] + '\n' + "اجاره: " + item[2] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
             if rent_or_buy == 'buy':
-                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "قیمت:" + item[1] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
 
             bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'gilan-province':
@@ -322,9 +318,9 @@ def handle_callback_query(call):
         web_scraper_response = web_scraper(province, rent_or_buy, building_type)
         for item in web_scraper_response :
             if rent_or_buy == 'rent':
-                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "ودیعه: " + item[1] + '\n' + "اجاره: " + item[2] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
             if rent_or_buy == 'buy':
-                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "قیمت:" + item[1] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
 
             bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'lorestan-province':
@@ -332,9 +328,9 @@ def handle_callback_query(call):
         web_scraper_response = web_scraper(province, rent_or_buy, building_type)
         for item in web_scraper_response :
             if rent_or_buy == 'rent':
-                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "ودیعه: " + item[1] + '\n' + "اجاره: " + item[2] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
             if rent_or_buy == 'buy':
-                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "قیمت:" + item[1] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
 
             bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'mazandaran-province':
@@ -342,9 +338,9 @@ def handle_callback_query(call):
         web_scraper_response = web_scraper(province, rent_or_buy, building_type)
         for item in web_scraper_response :
             if rent_or_buy == 'rent':
-                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "ودیعه: " + item[1] + '\n' + "اجاره: " + item[2] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
             if rent_or_buy == 'buy':
-                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "قیمت:" + item[1] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
 
             bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'markazi-province':
@@ -352,9 +348,9 @@ def handle_callback_query(call):
         web_scraper_response = web_scraper(province, rent_or_buy, building_type)
         for item in web_scraper_response :
             if rent_or_buy == 'rent':
-                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "ودیعه: " + item[1] + '\n' + "اجاره: " + item[2] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
             if rent_or_buy == 'buy':
-                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "قیمت:" + item[1] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
 
             bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'hormozgan-province':
@@ -362,9 +358,9 @@ def handle_callback_query(call):
         web_scraper_response = web_scraper(province, rent_or_buy, building_type)
         for item in web_scraper_response :
             if rent_or_buy == 'rent':
-                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "ودیعه: " + item[1] + '\n' + "اجاره: " + item[2] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
             if rent_or_buy == 'buy':
-                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "قیمت:" + item[1] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
 
             bot.send_message(call.message.chat.id, print_lst ) 
     elif call.data == 'hamadan-province':
@@ -372,9 +368,9 @@ def handle_callback_query(call):
         web_scraper_response = web_scraper(province, rent_or_buy, building_type)
         for item in web_scraper_response :
             if rent_or_buy == 'rent':
-                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "ودیعه: " + item[1] + '\n' + "اجاره: " + item[2] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
             if rent_or_buy == 'buy':
-                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "قیمت:" + item[1] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
 
             bot.send_message(call.message.chat.id, print_lst )
     elif call.data == 'sistan-and-baluchestan-province':
@@ -382,9 +378,9 @@ def handle_callback_query(call):
         web_scraper_response = web_scraper(province, rent_or_buy, building_type)
         for item in web_scraper_response :
             if rent_or_buy == 'rent':
-                print_lst = item[0] + '\n' + "ودیعه:" + item[1] + '\n' + "اجاره:" + item[2] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "ودیعه: " + item[1] + '\n' + "اجاره: " + item[2] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
             if rent_or_buy == 'buy':
-                print_lst = item[0] + '\n' + "قیمت:" + item[1] + '\n' + item[3]
+                print_lst = item[0] + '\n' + '\n' + "قیمت:" + item[1] + '\n' + "متراژ: " + item[4] + '\n' + "سال ساخت: " + item[5] + "\n" + "تعداد اتاق: " + item[6] + '\n' + "امکانات: " +item[7] + " - " + item[8] + " - " + item[9] + "\n" + "\n" + "توضیحات: " + "\n" + item[11] + '\n' + item[3]
 
             bot.send_message(call.message.chat.id, print_lst )
 
@@ -409,13 +405,19 @@ def web_scraper(province, rent_or_buy, building_type):
             if rent == 'اجاره:' or rent == 'رهن':
                 rent = ""
             link = 'https://divar.ir' + item.a['href']
-
             ad = [title, deposit, rent, link]
+            html_text_0 = requests.get(link).text
+            soup = BeautifulSoup(html_text_0, 'lxml')
+            ad_0 = soup.find_all('span', class_='kt-group-row-item__value')
+            for item in ad_0:
+                ad.append(item.get_text())
+            ad.append(ad)
+            ad_1 = soup.find('p', class_='kt-description-row__text kt-description-row__text--primary').text
+            ad.append(ad_1)
             ad_list.append(ad)
         return ad_list
     response = preprocess(soup)
     return response 
-
 
 # Define message handler function
 @bot.message_handler(commands=['start'])
